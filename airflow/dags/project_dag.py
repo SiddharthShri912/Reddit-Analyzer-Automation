@@ -10,27 +10,26 @@ def print_welcome():
     print('Welcome!')
 
 def scrape():
-    # Set up your Reddit API credentials
+    # Reddit API credentials
     client_id = 'qkE1j44jKtqFl1NA9CHqiQ'
     client_secret = 'A0RyHUl8pssdzJC1qUfICdzWPvABLw'
-    user_agent = 'python:DAG project:v1.0 (by u/GlumPlankton3997)'  # Describe your app
+    user_agent = 'python:DAG project:v1.0 (by u/GlumPlankton3997)'  # Describing Reddit app
 
-    # Authenticate with Reddit API
+    # Authenticating with Reddit API
     reddit = praw.Reddit(
         client_id=client_id,
         client_secret=client_secret,
         user_agent=user_agent
     )
 
-    # Specify the subreddit you want to scrape
     subreddit_name = 'india'
     subreddit = reddit.subreddit(subreddit_name)
 
-    mongo_client = pymongo.MongoClient('mongodb://host.docker.internal:27017/')
-    db = mongo_client['reddit_data']  # Replace with your desired database name
-    collection = db['reddit_posts']  # Replace with your desired collection name
+    mongo_client = pymongo.MongoClient('mongodb://host.docker.internal:27017/') # since i am using docker, need the internal mongodb server password
+    db = mongo_client['reddit_data']  
+    collection = db['reddit_posts'] 
 
-    # Retrieve recent posts
+    # Retrieving recent posts
     for submission in subreddit.new(limit=100):
         post_data = {
             'title': submission.title,
@@ -42,16 +41,15 @@ def scrape():
 
 def processing():
     mongo_client = pymongo.MongoClient('mongodb://host.docker.internal:27017/')
-    db = mongo_client['reddit_data']  # Replace with your desired database name
-    collection = db['reddit_posts']  # Replace with your desired collection name
-    # Find the most upvoted post (sorted by upvotes in descending order)
+    db = mongo_client['reddit_data']
+    collection = db['reddit_posts'] 
+    
+    # Finding the most upvoted post (sorted by upvotes in descending order)
+    most_upvoted_post = collection.find().sort('upvotes', pymongo.DESCENDING).limit(1) # easier with mongoDB
 
-    most_upvoted_post = collection.find().sort('upvotes', pymongo.DESCENDING).limit(1)
-
-    db = mongo_client['processed']  # Replace with your desired database name
-    collection = db['results']  # Replace with your desired collection name
-
-    # Print the most upvoted post (you can process it further as needed)
+    db = mongo_client['processed']  
+    collection = db['results']
+   
     for submission in most_upvoted_post:
         print(submission)
         post_data = {
@@ -59,25 +57,28 @@ def processing():
             'text': submission['text'],
             'upvotes': submission['upvotes']
         }
-        collection.insert_one(post_data)    
+        collection.insert_one(post_data)  
+        # inserting post in mongodb for pulling later  
         
 
 def processing2():
     mongo_client = pymongo.MongoClient('mongodb://host.docker.internal:27017/')
-    db = mongo_client['reddit_data']  # Replace with your desired database name
-    collection = db['reddit_posts']  # Replace with your desired collection name
+    db = mongo_client['reddit_data']  
+    collection = db['reddit_posts']  
 
     all_data = collection.find()
+    # retrieving all posts and titles
 
     all_post = ""
     all_title = ""
+
     for post in all_data:
         all_title += post.get('title')
         all_post += post.get('text')
 
     print(all_post)
     print(all_title)
-    # Assuming you have the 'all_post' and 'all_title' strings
+    
     combined_text = all_post + " " + all_title
 
     # Split the combined text into individual words based on whitespace
@@ -94,7 +95,7 @@ def processing2():
         else:
             word_freq[word] = 1
 
-    # Get the top 10 most common wordss
+    # Prolly should limit for better quality results
     most_common_words = sorted(word_freq.items(), key=lambda x: x[1], reverse=True)
 
     world_news_stopwords = [
@@ -119,8 +120,9 @@ def processing2():
     "you", "this", "that", "it", "from", "at", "by", "about",
     "as", "by", "from", "at", "on", "into", "over", "under", "through", "between",
     "after", "before", "during", "since", "while", "because", "although", "unless", "whether", "among","has","what","where","why","how","or","said","asked","our","see","again","see","i","us","are","say","against"]
-
-    f = open('airflow\output.txt','w+') 
+    # Few stopwords, need to add more relevant ones
+    # have to use relative path of the file, because the docker should be able to access it
+    f = open('airflow\output.txt','w+') # writing output into file in w+ mode, so for every cycle file gets cleared
     f.write("Top words and their frequencies\n")
 
     for word, freq in most_common_words:
@@ -133,36 +135,37 @@ def processing2():
     f.close()
 
 def saveTopVoted():
-    mongo_client = pymongo.MongoClient('mongodb://host.docker.internal:27017/')
-    db = mongo_client['processed']  # Replace with your desired database name
-    collection = db['results']  # Replace with your desired collection name
+    mongo_client = pymongo.MongoClient('mongodb://host.docker.internal:27017/') 
+    db = mongo_client['processed'] 
+    collection = db['results']
 
     post_list = collection.find()
 
-    f = open('airflow\output.txt', 'a+')
-    f.write("Top Voted Posts\n\n")
-
+    f = open('airflow\output.txt', 'a+') # a+ mode, so we start at the end of the file
+    f.write("Top Voted Posts\n")
+    # writing output to output file
     for p in post_list:
         f.write(f"{p['title']} {p['upvotes']}\n")
         print(p)
 
     f.close()
 
-def clearDB():
+def clearDB(): 
+    # after every cycle we need to clear the database to have overlapping data or to overwhelm the program
     mongo_client = pymongo.MongoClient('mongodb://host.docker.internal:27017/')
 
-    db = mongo_client['reddit_data']  # Replace with your desired database name
-    collection = db['reddit_posts']  # Replace with your desired collection name
+    db = mongo_client['reddit_data']  
+    collection = db['reddit_posts']  
+
+    collection.delete_many({}) # clearing all documents
+
+    db = mongo_client['processed'] 
+    collection = db['results'] 
 
     collection.delete_many({})
 
-    db = mongo_client['processed']  # Replace with your desired database name
-    collection = db['results']  # Replace with your desired collection name
 
-    collection.delete_many({})
-
-
-
+# All the DAG tasks
 dag = DAG(
     'reddit_dag',
     default_args={'start_date': days_ago(1)},
