@@ -12708,3 +12708,52 @@ SyntaxError: invalid syntax
 [2024-08-02T21:47:25.426+0000] {logging_mixin.py:188} INFO - [2024-08-02T21:47:25.426+0000] {dag.py:3089} INFO - Sync 1 DAGs
 [2024-08-02T21:47:25.451+0000] {logging_mixin.py:188} INFO - [2024-08-02T21:47:25.450+0000] {dag.py:3947} INFO - Setting next_dagrun for reddit_dag to 2024-08-02 00:00:00+00:00, run_after=2024-08-03 00:00:00+00:00
 [2024-08-02T21:47:25.507+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/project_dag.py took 0.207 seconds
+[2024-08-02T21:47:55.777+0000] {processor.py:161} INFO - Started process (PID=3871) to work on /opt/airflow/dags/project_dag.py
+[2024-08-02T21:47:55.778+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/project_dag.py for tasks to queue
+[2024-08-02T21:47:55.779+0000] {logging_mixin.py:188} INFO - [2024-08-02T21:47:55.779+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/project_dag.py
+[2024-08-02T21:47:55.875+0000] {processor.py:840} INFO - DAG(s) 'reddit_dag' retrieved from /opt/airflow/dags/project_dag.py
+[2024-08-02T21:47:55.905+0000] {logging_mixin.py:188} INFO - [2024-08-02T21:47:55.904+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-02T21:47:55.931+0000] {logging_mixin.py:188} INFO - [2024-08-02T21:47:55.931+0000] {dag.py:3947} INFO - Setting next_dagrun for reddit_dag to 2024-08-02 00:00:00+00:00, run_after=2024-08-03 00:00:00+00:00
+[2024-08-02T21:47:55.986+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/project_dag.py took 0.216 seconds
+[2024-08-02T21:48:26.258+0000] {processor.py:161} INFO - Started process (PID=3873) to work on /opt/airflow/dags/project_dag.py
+[2024-08-02T21:48:26.259+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/project_dag.py for tasks to queue
+[2024-08-02T21:48:26.260+0000] {logging_mixin.py:188} INFO - [2024-08-02T21:48:26.259+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/project_dag.py
+[2024-08-02T21:48:26.352+0000] {processor.py:840} INFO - DAG(s) 'reddit_dag' retrieved from /opt/airflow/dags/project_dag.py
+[2024-08-02T21:48:26.382+0000] {logging_mixin.py:188} INFO - [2024-08-02T21:48:26.381+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-02T21:48:26.406+0000] {logging_mixin.py:188} INFO - [2024-08-02T21:48:26.405+0000] {dag.py:3947} INFO - Setting next_dagrun for reddit_dag to 2024-08-02 00:00:00+00:00, run_after=2024-08-03 00:00:00+00:00
+[2024-08-02T21:48:26.461+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/project_dag.py took 0.211 seconds
+[2024-08-02T21:48:56.581+0000] {processor.py:161} INFO - Started process (PID=3875) to work on /opt/airflow/dags/project_dag.py
+[2024-08-02T21:48:56.582+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/project_dag.py for tasks to queue
+[2024-08-02T21:48:56.582+0000] {logging_mixin.py:188} INFO - [2024-08-02T21:48:56.582+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/project_dag.py
+[2024-08-02T21:48:56.667+0000] {processor.py:840} INFO - DAG(s) 'reddit_dag' retrieved from /opt/airflow/dags/project_dag.py
+[2024-08-02T21:48:56.692+0000] {logging_mixin.py:188} INFO - [2024-08-02T21:48:56.692+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-02T21:48:56.713+0000] {logging_mixin.py:188} INFO - [2024-08-02T21:48:56.713+0000] {dag.py:3947} INFO - Setting next_dagrun for reddit_dag to 2024-08-02 00:00:00+00:00, run_after=2024-08-03 00:00:00+00:00
+[2024-08-02T21:48:56.765+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/project_dag.py took 0.191 seconds
+[2024-08-02T21:49:26.930+0000] {processor.py:161} INFO - Started process (PID=3877) to work on /opt/airflow/dags/project_dag.py
+[2024-08-02T21:49:26.931+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/project_dag.py for tasks to queue
+[2024-08-02T21:49:26.932+0000] {logging_mixin.py:188} INFO - [2024-08-02T21:49:26.931+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/project_dag.py
+[2024-08-02T21:49:27.015+0000] {processor.py:840} INFO - DAG(s) 'reddit_dag' retrieved from /opt/airflow/dags/project_dag.py
+[2024-08-02T21:49:27.041+0000] {logging_mixin.py:188} INFO - [2024-08-02T21:49:27.041+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-02T21:49:27.062+0000] {logging_mixin.py:188} INFO - [2024-08-02T21:49:27.062+0000] {dag.py:3947} INFO - Setting next_dagrun for reddit_dag to 2024-08-02 00:00:00+00:00, run_after=2024-08-03 00:00:00+00:00
+[2024-08-02T21:49:27.112+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/project_dag.py took 0.189 seconds
+[2024-08-02T21:49:57.302+0000] {processor.py:161} INFO - Started process (PID=3879) to work on /opt/airflow/dags/project_dag.py
+[2024-08-02T21:49:57.303+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/project_dag.py for tasks to queue
+[2024-08-02T21:49:57.304+0000] {logging_mixin.py:188} INFO - [2024-08-02T21:49:57.303+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/project_dag.py
+[2024-08-02T21:49:57.386+0000] {processor.py:840} INFO - DAG(s) 'reddit_dag' retrieved from /opt/airflow/dags/project_dag.py
+[2024-08-02T21:49:57.412+0000] {logging_mixin.py:188} INFO - [2024-08-02T21:49:57.411+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-02T21:49:57.433+0000] {logging_mixin.py:188} INFO - [2024-08-02T21:49:57.433+0000] {dag.py:3947} INFO - Setting next_dagrun for reddit_dag to 2024-08-02 00:00:00+00:00, run_after=2024-08-03 00:00:00+00:00
+[2024-08-02T21:49:57.486+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/project_dag.py took 0.190 seconds
+[2024-08-02T21:50:27.695+0000] {processor.py:161} INFO - Started process (PID=3881) to work on /opt/airflow/dags/project_dag.py
+[2024-08-02T21:50:27.696+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/project_dag.py for tasks to queue
+[2024-08-02T21:50:27.697+0000] {logging_mixin.py:188} INFO - [2024-08-02T21:50:27.696+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/project_dag.py
+[2024-08-02T21:50:27.780+0000] {processor.py:840} INFO - DAG(s) 'reddit_dag' retrieved from /opt/airflow/dags/project_dag.py
+[2024-08-02T21:50:27.809+0000] {logging_mixin.py:188} INFO - [2024-08-02T21:50:27.809+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-02T21:50:27.832+0000] {logging_mixin.py:188} INFO - [2024-08-02T21:50:27.832+0000] {dag.py:3947} INFO - Setting next_dagrun for reddit_dag to 2024-08-02 00:00:00+00:00, run_after=2024-08-03 00:00:00+00:00
+[2024-08-02T21:50:27.880+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/project_dag.py took 0.191 seconds
+[2024-08-02T21:50:58.173+0000] {processor.py:161} INFO - Started process (PID=3883) to work on /opt/airflow/dags/project_dag.py
+[2024-08-02T21:50:58.174+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/project_dag.py for tasks to queue
+[2024-08-02T21:50:58.175+0000] {logging_mixin.py:188} INFO - [2024-08-02T21:50:58.175+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/project_dag.py
+[2024-08-02T21:50:58.258+0000] {processor.py:840} INFO - DAG(s) 'reddit_dag' retrieved from /opt/airflow/dags/project_dag.py
+[2024-08-02T21:50:58.286+0000] {logging_mixin.py:188} INFO - [2024-08-02T21:50:58.286+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-02T21:50:58.309+0000] {logging_mixin.py:188} INFO - [2024-08-02T21:50:58.309+0000] {dag.py:3947} INFO - Setting next_dagrun for reddit_dag to 2024-08-02 00:00:00+00:00, run_after=2024-08-03 00:00:00+00:00
+[2024-08-02T21:50:58.357+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/project_dag.py took 0.190 seconds
