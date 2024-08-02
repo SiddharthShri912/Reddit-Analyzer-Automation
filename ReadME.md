@@ -29,7 +29,7 @@ The processes look like this, hence called DAGs
 4. I want to add more analysis features like sentiment analysis, trends, user trends and etc.
 5. Lastly, I feel like setting up my own SMTP server and send emails through that, by doing some research it came to my knowledge that I can host a SMTP server on my local device, but as of now i find it very tricky.
 
-### OUTPUTS AND GENERAL OBSERVATIONS:
+# OUTPUTS AND GENERAL OBSERVATIONS:
 
 ## OUTPUTS:
 
@@ -46,7 +46,7 @@ The processes look like this, hence called DAGs
 3. The program doesnt seem to be very slow, but again I want to optimize it how much ever i can.
 4. Make better use of MongoDB and other tools provided by python is also something i want to look into
 
-### WHY DID I CHOOSE TO DO THIS? WHAT ARE THE REAL LIFE USE CASES ?
+# WHY DID I CHOOSE TO DO THIS? WHAT ARE THE REAL LIFE USE CASES ?
 
 **If made better and added alot more features can be a viable choice for data analysis, as of now not so much**
 
