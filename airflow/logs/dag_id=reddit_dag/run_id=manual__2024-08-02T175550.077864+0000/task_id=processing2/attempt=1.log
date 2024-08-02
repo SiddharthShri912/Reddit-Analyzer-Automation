@@ -1,0 +1,176 @@
+[2024-08-02T17:56:06.930+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-02T17:56:06.959+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_dag.processing2 manual__2024-08-02T17:55:50.077864+00:00 [queued]>
+[2024-08-02T17:56:06.971+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_dag.processing2 manual__2024-08-02T17:55:50.077864+00:00 [queued]>
+[2024-08-02T17:56:06.971+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-02T17:56:06.999+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): processing2> on 2024-08-02 17:55:50.077864+00:00
+[2024-08-02T17:56:07.004+0000] {standard_task_runner.py:64} INFO - Started process 345 to run task
+[2024-08-02T17:56:07.005+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_dag', 'processing2', 'manual__2024-08-02T17:55:50.077864+00:00', '--job-id', '206', '--raw', '--subdir', 'DAGS_FOLDER/project_dag.py', '--cfg-path', '/tmp/tmpd17_gfm9']
+[2024-08-02T17:56:07.007+0000] {standard_task_runner.py:91} INFO - Job 206: Subtask processing2
+[2024-08-02T17:56:07.065+0000] {task_command.py:426} INFO - Running <TaskInstance: reddit_dag.processing2 manual__2024-08-02T17:55:50.077864+00:00 [running]> on host 2c089d13d5db
+[2024-08-02T17:56:07.175+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_dag' AIRFLOW_CTX_TASK_ID='processing2' AIRFLOW_CTX_EXECUTION_DATE='2024-08-02T17:55:50.077864+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-02T17:55:50.077864+00:00'
+[2024-08-02T17:56:07.176+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-02T17:56:07.210+0000] {logging_mixin.py:188} INFO - Anger mounts over environmental cost of Google datacentre in UruguayPaul Whelan released from Russia in prisoner swap that includes reporter Evan GershkovichUS and Israel discuss "new defensive military deployments" Release of Russian hackers believed to be first U.S. prisoner swap of international cybercriminalsThe U.S. moves to recognize election victory of Venezuelan opposition over MaduroAnger mounts over environmental cost of Google datacentre in UruguayPaul Whelan released from Russia in prisoner swap that includes reporter Evan GershkovichUS and Israel discuss "new defensive military deployments" Release of Russian hackers believed to be first U.S. prisoner swap of international cybercriminalsThe U.S. moves to recognize election victory of Venezuelan opposition over Maduro$10M cash withdrawal drove secret probe into whether Trump took money from EgyptRevealed: Tories failed to do impact check before approving banned pesticideIsrael kills an Al Jazeera journalist and says, without evidence, he was a Hamas operativeFrance investigates death threats against Olympics ceremony directorFrance has formally advised its citizen against travelling to Iran and has asked French citizens still the country to leave as soon as possible due to a risk of military escalation in the region$10M cash withdrawal drove secret probe into whether Trump took money from EgyptRevealed: Tories failed to do impact check before approving banned pesticideIsrael kills an Al Jazeera journalist and says, without evidence, he was a Hamas operativeFrance investigates death threats against Olympics ceremony directorFrance has formally advised its citizen against travelling to Iran and has asked French citizens still the country to leave as soon as possible due to a risk of military escalation in the region$10M cash withdrawal drove secret probe into whether Trump took money from EgyptRevealed: Tories failed to do impact check before approving banned pesticideIsrael kills an Al Jazeera journalist and says, without evidence, he was a Hamas operativeFrance investigates death threats against Olympics ceremony directorFrance has formally advised its citizen against travelling to Iran and has asked French citizens still the country to leave as soon as possible due to a risk of military escalation in the region$10M cash withdrawal drove secret probe into whether Trump took money from EgyptRevealed: Tories failed to do impact check before approving banned pesticideIsrael kills an Al Jazeera journalist and says, without evidence, he was a Hamas operativeFrance investigates death threats against Olympics ceremony directorFrance has formally advised its citizen against travelling to Iran and has asked French citizens still the country to leave as soon as possible due to a risk of military escalation in the region$10M cash withdrawal drove secret probe into whether Trump took money from EgyptRevealed: Tories failed to do impact check before approving banned pesticideIsrael kills an Al Jazeera journalist and says, without evidence, he was a Hamas operativeFrance investigates death threats against Olympics ceremony directorFrance has formally advised its citizen against travelling to Iran and has asked French citizens still the country to leave as soon as possible due to a risk of military escalation in the regionPolish foreign ministry warns against travel to Lebanon, Israel, Iran'We will act': Brussels asks Hungary to explain the easing of visa rules for RussiansHezbollah resumes steady rocket, artillery fire against IsraelIran plans to attack Israel on Tisha B’Av - the Jewish day of disasters, Western intelligence saysIran plans to attack Israel on Tisha B’Av - the Jewish day of disasters, Western intelligence saysPolish foreign ministry warns against travel to Lebanon, Israel, Iran'We will act': Brussels asks Hungary to explain the easing of visa rules for RussiansHezbollah resumes steady rocket, artillery fire against IsraelIran plans to attack Israel on Tisha B’Av - the Jewish day of disasters, Western intelligence saysIran plans to attack Israel on Tisha B’Av - the Jewish day of disasters, Western intelligence saysPolish foreign ministry warns against travel to Lebanon, Israel, Iran'We will act': Brussels asks Hungary to explain the easing of visa rules for RussiansHezbollah resumes steady rocket, artillery fire against IsraelIran plans to attack Israel on Tisha B’Av - the Jewish day of disasters, Western intelligence saysIran plans to attack Israel on Tisha B’Av - the Jewish day of disasters, Western intelligence saysGermany joins multinational force monitoring Korean borderPolish foreign ministry warns against travel to Lebanon, Israel, Iran'We will act': Brussels asks Hungary to explain the easing of visa rules for RussiansHezbollah resumes steady rocket, artillery fire against IsraelIran plans to attack Israel on Tisha B’Av - the Jewish day of disasters, Western intelligence saysGermany joins multinational force monitoring Korean borderPolish foreign ministry warns against travel to Lebanon, Israel, Iran'We will act': Brussels asks Hungary to explain the easing of visa rules for RussiansHezbollah resumes steady rocket, artillery fire against IsraelIran plans to attack Israel on Tisha B’Av - the Jewish day of disasters, Western intelligence saysGermany joins multinational force monitoring Korean borderPolish foreign ministry warns against travel to Lebanon, Israel, Iran'We will act': Brussels asks Hungary to explain the easing of visa rules for RussiansHezbollah resumes steady rocket, artillery fire against IsraelIran plans to attack Israel on Tisha B’Av - the Jewish day of disasters, Western intelligence saysMaduro Opposition Shares ‘Overwhelming Evidence’ of Venezuela Election FraudUkraine receives first F-16 fighter jets from NetherlandsCarter Center unable to verify Venezuela election results, blasts officials for lack of transparencyBiden, Lula press Venezuela to publish election talliesGermany joins multinational force monitoring Korean borderMaduro Opposition Shares ‘Overwhelming Evidence’ of Venezuela Election FraudUkraine receives first F-16 fighter jets from NetherlandsCarter Center unable to verify Venezuela election results, blasts officials for lack of transparencyBiden, Lula press Venezuela to publish election talliesGermany joins multinational force monitoring Korean border
+[2024-08-02T17:56:07.211+0000] {logging_mixin.py:188} INFO - against: 22
+[2024-08-02T17:56:07.211+0000] {logging_mixin.py:188} INFO - israel: 11
+[2024-08-02T17:56:07.211+0000] {logging_mixin.py:188} INFO - plans: 9
+[2024-08-02T17:56:07.211+0000] {logging_mixin.py:188} INFO - attack: 9
+[2024-08-02T17:56:07.212+0000] {logging_mixin.py:188} INFO - tisha: 9
+[2024-08-02T17:56:07.212+0000] {logging_mixin.py:188} INFO - b’av: 9
+[2024-08-02T17:56:07.212+0000] {logging_mixin.py:188} INFO - -: 9
+[2024-08-02T17:56:07.213+0000] {logging_mixin.py:188} INFO - jewish: 9
+[2024-08-02T17:56:07.213+0000] {logging_mixin.py:188} INFO - day: 9
+[2024-08-02T17:56:07.213+0000] {logging_mixin.py:188} INFO - disasters,: 9
+[2024-08-02T17:56:07.214+0000] {logging_mixin.py:188} INFO - western: 9
+[2024-08-02T17:56:07.214+0000] {logging_mixin.py:188} INFO - intelligence: 9
+[2024-08-02T17:56:07.214+0000] {logging_mixin.py:188} INFO - election: 8
+[2024-08-02T17:56:07.215+0000] {logging_mixin.py:188} INFO - military: 7
+[2024-08-02T17:56:07.215+0000] {logging_mixin.py:188} INFO - foreign: 6
+[2024-08-02T17:56:07.215+0000] {logging_mixin.py:188} INFO - ministry: 6
+[2024-08-02T17:56:07.216+0000] {logging_mixin.py:188} INFO - warns: 6
+[2024-08-02T17:56:07.216+0000] {logging_mixin.py:188} INFO - travel: 6
+[2024-08-02T17:56:07.216+0000] {logging_mixin.py:188} INFO - lebanon,: 6
+[2024-08-02T17:56:07.216+0000] {logging_mixin.py:188} INFO - israel,: 6
+[2024-08-02T17:56:07.217+0000] {logging_mixin.py:188} INFO - iran'we: 6
+[2024-08-02T17:56:07.217+0000] {logging_mixin.py:188} INFO - will: 6
+[2024-08-02T17:56:07.217+0000] {logging_mixin.py:188} INFO - act':: 6
+[2024-08-02T17:56:07.218+0000] {logging_mixin.py:188} INFO - brussels: 6
+[2024-08-02T17:56:07.218+0000] {logging_mixin.py:188} INFO - asks: 6
+[2024-08-02T17:56:07.218+0000] {logging_mixin.py:188} INFO - hungary: 6
+[2024-08-02T17:56:07.218+0000] {logging_mixin.py:188} INFO - explain: 6
+[2024-08-02T17:56:07.219+0000] {logging_mixin.py:188} INFO - easing: 6
+[2024-08-02T17:56:07.219+0000] {logging_mixin.py:188} INFO - visa: 6
+[2024-08-02T17:56:07.219+0000] {logging_mixin.py:188} INFO - rules: 6
+[2024-08-02T17:56:07.220+0000] {logging_mixin.py:188} INFO - russianshezbollah: 6
+[2024-08-02T17:56:07.220+0000] {logging_mixin.py:188} INFO - resumes: 6
+[2024-08-02T17:56:07.220+0000] {logging_mixin.py:188} INFO - steady: 6
+[2024-08-02T17:56:07.221+0000] {logging_mixin.py:188} INFO - rocket,: 6
+[2024-08-02T17:56:07.221+0000] {logging_mixin.py:188} INFO - artillery: 6
+[2024-08-02T17:56:07.221+0000] {logging_mixin.py:188} INFO - fire: 6
+[2024-08-02T17:56:07.221+0000] {logging_mixin.py:188} INFO - israeliran: 6
+[2024-08-02T17:56:07.222+0000] {logging_mixin.py:188} INFO - venezuela: 6
+[2024-08-02T17:56:07.222+0000] {logging_mixin.py:188} INFO - cash: 5
+[2024-08-02T17:56:07.222+0000] {logging_mixin.py:188} INFO - withdrawal: 5
+[2024-08-02T17:56:07.223+0000] {logging_mixin.py:188} INFO - drove: 5
+[2024-08-02T17:56:07.223+0000] {logging_mixin.py:188} INFO - secret: 5
+[2024-08-02T17:56:07.223+0000] {logging_mixin.py:188} INFO - probe: 5
+[2024-08-02T17:56:07.224+0000] {logging_mixin.py:188} INFO - trump: 5
+[2024-08-02T17:56:07.224+0000] {logging_mixin.py:188} INFO - took: 5
+[2024-08-02T17:56:07.224+0000] {logging_mixin.py:188} INFO - money: 5
+[2024-08-02T17:56:07.225+0000] {logging_mixin.py:188} INFO - egyptrevealed:: 5
+[2024-08-02T17:56:07.225+0000] {logging_mixin.py:188} INFO - tories: 5
+[2024-08-02T17:56:07.225+0000] {logging_mixin.py:188} INFO - failed: 5
+[2024-08-02T17:56:07.226+0000] {logging_mixin.py:188} INFO - do: 5
+[2024-08-02T17:56:07.226+0000] {logging_mixin.py:188} INFO - impact: 5
+[2024-08-02T17:56:07.226+0000] {logging_mixin.py:188} INFO - check: 5
+[2024-08-02T17:56:07.226+0000] {logging_mixin.py:188} INFO - approving: 5
+[2024-08-02T17:56:07.227+0000] {logging_mixin.py:188} INFO - banned: 5
+[2024-08-02T17:56:07.227+0000] {logging_mixin.py:188} INFO - pesticideisrael: 5
+[2024-08-02T17:56:07.227+0000] {logging_mixin.py:188} INFO - kills: 5
+[2024-08-02T17:56:07.228+0000] {logging_mixin.py:188} INFO - an: 5
+[2024-08-02T17:56:07.228+0000] {logging_mixin.py:188} INFO - al: 5
+[2024-08-02T17:56:07.228+0000] {logging_mixin.py:188} INFO - jazeera: 5
+[2024-08-02T17:56:07.229+0000] {logging_mixin.py:188} INFO - says,: 5
+[2024-08-02T17:56:07.229+0000] {logging_mixin.py:188} INFO - without: 5
+[2024-08-02T17:56:07.229+0000] {logging_mixin.py:188} INFO - evidence,: 5
+[2024-08-02T17:56:07.230+0000] {logging_mixin.py:188} INFO - he: 5
+[2024-08-02T17:56:07.230+0000] {logging_mixin.py:188} INFO - was: 5
+[2024-08-02T17:56:07.230+0000] {logging_mixin.py:188} INFO - hamas: 5
+[2024-08-02T17:56:07.230+0000] {logging_mixin.py:188} INFO - operativefrance: 5
+[2024-08-02T17:56:07.231+0000] {logging_mixin.py:188} INFO - investigates: 5
+[2024-08-02T17:56:07.231+0000] {logging_mixin.py:188} INFO - death: 5
+[2024-08-02T17:56:07.231+0000] {logging_mixin.py:188} INFO - threats: 5
+[2024-08-02T17:56:07.232+0000] {logging_mixin.py:188} INFO - olympics: 5
+[2024-08-02T17:56:07.232+0000] {logging_mixin.py:188} INFO - ceremony: 5
+[2024-08-02T17:56:07.232+0000] {logging_mixin.py:188} INFO - directorfrance: 5
+[2024-08-02T17:56:07.233+0000] {logging_mixin.py:188} INFO - formally: 5
+[2024-08-02T17:56:07.233+0000] {logging_mixin.py:188} INFO - advised: 5
+[2024-08-02T17:56:07.233+0000] {logging_mixin.py:188} INFO - its: 5
+[2024-08-02T17:56:07.233+0000] {logging_mixin.py:188} INFO - citizen: 5
+[2024-08-02T17:56:07.234+0000] {logging_mixin.py:188} INFO - travelling: 5
+[2024-08-02T17:56:07.234+0000] {logging_mixin.py:188} INFO - iran: 5
+[2024-08-02T17:56:07.234+0000] {logging_mixin.py:188} INFO - asked: 5
+[2024-08-02T17:56:07.235+0000] {logging_mixin.py:188} INFO - french: 5
+[2024-08-02T17:56:07.235+0000] {logging_mixin.py:188} INFO - citizens: 5
+[2024-08-02T17:56:07.235+0000] {logging_mixin.py:188} INFO - still: 5
+[2024-08-02T17:56:07.235+0000] {logging_mixin.py:188} INFO - country: 5
+[2024-08-02T17:56:07.236+0000] {logging_mixin.py:188} INFO - leave: 5
+[2024-08-02T17:56:07.236+0000] {logging_mixin.py:188} INFO - soon: 5
+[2024-08-02T17:56:07.236+0000] {logging_mixin.py:188} INFO - possible: 5
+[2024-08-02T17:56:07.237+0000] {logging_mixin.py:188} INFO - due: 5
+[2024-08-02T17:56:07.237+0000] {logging_mixin.py:188} INFO - risk: 5
+[2024-08-02T17:56:07.238+0000] {logging_mixin.py:188} INFO - escalation: 5
+[2024-08-02T17:56:07.238+0000] {logging_mixin.py:188} INFO - joins: 5
+[2024-08-02T17:56:07.238+0000] {logging_mixin.py:188} INFO - multinational: 5
+[2024-08-02T17:56:07.238+0000] {logging_mixin.py:188} INFO - force: 5
+[2024-08-02T17:56:07.239+0000] {logging_mixin.py:188} INFO - monitoring: 5
+[2024-08-02T17:56:07.239+0000] {logging_mixin.py:188} INFO - korean: 5
+[2024-08-02T17:56:07.239+0000] {logging_mixin.py:188} INFO - prisoner: 4
+[2024-08-02T17:56:07.240+0000] {logging_mixin.py:188} INFO - swap: 4
+[2024-08-02T17:56:07.240+0000] {logging_mixin.py:188} INFO - first: 4
+[2024-08-02T17:56:07.240+0000] {logging_mixin.py:188} INFO - u.s.: 4
+[2024-08-02T17:56:07.240+0000] {logging_mixin.py:188} INFO - opposition: 4
+[2024-08-02T17:56:07.241+0000] {logging_mixin.py:188} INFO - region$10m: 4
+[2024-08-02T17:56:07.241+0000] {logging_mixin.py:188} INFO - saysiran: 3
+[2024-08-02T17:56:07.241+0000] {logging_mixin.py:188} INFO - saysgermany: 3
+[2024-08-02T17:56:07.241+0000] {logging_mixin.py:188} INFO - borderpolish: 3
+[2024-08-02T17:56:07.242+0000] {logging_mixin.py:188} INFO - mounts: 2
+[2024-08-02T17:56:07.242+0000] {logging_mixin.py:188} INFO - environmental: 2
+[2024-08-02T17:56:07.242+0000] {logging_mixin.py:188} INFO - cost: 2
+[2024-08-02T17:56:07.243+0000] {logging_mixin.py:188} INFO - google: 2
+[2024-08-02T17:56:07.243+0000] {logging_mixin.py:188} INFO - datacentre: 2
+[2024-08-02T17:56:07.243+0000] {logging_mixin.py:188} INFO - uruguaypaul: 2
+[2024-08-02T17:56:07.244+0000] {logging_mixin.py:188} INFO - whelan: 2
+[2024-08-02T17:56:07.244+0000] {logging_mixin.py:188} INFO - released: 2
+[2024-08-02T17:56:07.244+0000] {logging_mixin.py:188} INFO - russia: 2
+[2024-08-02T17:56:07.244+0000] {logging_mixin.py:188} INFO - includes: 2
+[2024-08-02T17:56:07.245+0000] {logging_mixin.py:188} INFO - reporter: 2
+[2024-08-02T17:56:07.245+0000] {logging_mixin.py:188} INFO - evan: 2
+[2024-08-02T17:56:07.245+0000] {logging_mixin.py:188} INFO - gershkovichus: 2
+[2024-08-02T17:56:07.246+0000] {logging_mixin.py:188} INFO - discuss: 2
+[2024-08-02T17:56:07.246+0000] {logging_mixin.py:188} INFO - "new: 2
+[2024-08-02T17:56:07.246+0000] {logging_mixin.py:188} INFO - defensive: 2
+[2024-08-02T17:56:07.246+0000] {logging_mixin.py:188} INFO - deployments": 2
+[2024-08-02T17:56:07.247+0000] {logging_mixin.py:188} INFO - release: 2
+[2024-08-02T17:56:07.247+0000] {logging_mixin.py:188} INFO - russian: 2
+[2024-08-02T17:56:07.247+0000] {logging_mixin.py:188} INFO - hackers: 2
+[2024-08-02T17:56:07.248+0000] {logging_mixin.py:188} INFO - believed: 2
+[2024-08-02T17:56:07.248+0000] {logging_mixin.py:188} INFO - be: 2
+[2024-08-02T17:56:07.248+0000] {logging_mixin.py:188} INFO - cybercriminalsthe: 2
+[2024-08-02T17:56:07.248+0000] {logging_mixin.py:188} INFO - moves: 2
+[2024-08-02T17:56:07.249+0000] {logging_mixin.py:188} INFO - recognize: 2
+[2024-08-02T17:56:07.249+0000] {logging_mixin.py:188} INFO - victory: 2
+[2024-08-02T17:56:07.249+0000] {logging_mixin.py:188} INFO - venezuelan: 2
+[2024-08-02T17:56:07.250+0000] {logging_mixin.py:188} INFO - sayspolish: 2
+[2024-08-02T17:56:07.250+0000] {logging_mixin.py:188} INFO - shares: 2
+[2024-08-02T17:56:07.250+0000] {logging_mixin.py:188} INFO - ‘overwhelming: 2
+[2024-08-02T17:56:07.250+0000] {logging_mixin.py:188} INFO - evidence’: 2
+[2024-08-02T17:56:07.251+0000] {logging_mixin.py:188} INFO - fraudukraine: 2
+[2024-08-02T17:56:07.251+0000] {logging_mixin.py:188} INFO - receives: 2
+[2024-08-02T17:56:07.251+0000] {logging_mixin.py:188} INFO - f-16: 2
+[2024-08-02T17:56:07.252+0000] {logging_mixin.py:188} INFO - fighter: 2
+[2024-08-02T17:56:07.252+0000] {logging_mixin.py:188} INFO - jets: 2
+[2024-08-02T17:56:07.252+0000] {logging_mixin.py:188} INFO - netherlandscarter: 2
+[2024-08-02T17:56:07.252+0000] {logging_mixin.py:188} INFO - center: 2
+[2024-08-02T17:56:07.253+0000] {logging_mixin.py:188} INFO - unable: 2
+[2024-08-02T17:56:07.253+0000] {logging_mixin.py:188} INFO - verify: 2
+[2024-08-02T17:56:07.253+0000] {logging_mixin.py:188} INFO - results,: 2
+[2024-08-02T17:56:07.253+0000] {logging_mixin.py:188} INFO - blasts: 2
+[2024-08-02T17:56:07.254+0000] {logging_mixin.py:188} INFO - officials: 2
+[2024-08-02T17:56:07.254+0000] {logging_mixin.py:188} INFO - lack: 2
+[2024-08-02T17:56:07.254+0000] {logging_mixin.py:188} INFO - transparencybiden,: 2
+[2024-08-02T17:56:07.255+0000] {logging_mixin.py:188} INFO - lula: 2
+[2024-08-02T17:56:07.255+0000] {logging_mixin.py:188} INFO - publish: 2
+[2024-08-02T17:56:07.255+0000] {logging_mixin.py:188} INFO - talliesgermany: 2
+[2024-08-02T17:56:07.256+0000] {logging_mixin.py:188} INFO - anger: 1
+[2024-08-02T17:56:07.256+0000] {logging_mixin.py:188} INFO - maduroanger: 1
+[2024-08-02T17:56:07.256+0000] {logging_mixin.py:188} INFO - maduro$10m: 1
+[2024-08-02T17:56:07.257+0000] {logging_mixin.py:188} INFO - regionpolish: 1
+[2024-08-02T17:56:07.257+0000] {logging_mixin.py:188} INFO - saysmaduro: 1
+[2024-08-02T17:56:07.257+0000] {logging_mixin.py:188} INFO - bordermaduro: 1
+[2024-08-02T17:56:07.257+0000] {logging_mixin.py:188} INFO - border: 1
+[2024-08-02T17:56:07.258+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-02T17:56:07.258+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-02T17:56:07.269+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=reddit_dag, task_id=processing2, run_id=manual__2024-08-02T17:55:50.077864+00:00, execution_date=20240802T175550, start_date=20240802T175606, end_date=20240802T175607
+[2024-08-02T17:56:07.299+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-02T17:56:07.324+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-02T17:56:07.332+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

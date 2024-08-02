@@ -1,0 +1,76 @@
+[2024-08-01T21:30:39.577+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-01T21:30:39.606+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_dag.print_subreddit_posts manual__2024-08-01T21:30:31.624979+00:00 [queued]>
+[2024-08-01T21:30:39.616+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_dag.print_subreddit_posts manual__2024-08-01T21:30:31.624979+00:00 [queued]>
+[2024-08-01T21:30:39.617+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-01T21:30:39.648+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): print_subreddit_posts> on 2024-08-01 21:30:31.624979+00:00
+[2024-08-01T21:30:39.654+0000] {standard_task_runner.py:64} INFO - Started process 741 to run task
+[2024-08-01T21:30:39.656+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_dag', 'print_subreddit_posts', 'manual__2024-08-01T21:30:31.624979+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/project_dag.py', '--cfg-path', '/tmp/tmp7vjfx9ui']
+[2024-08-01T21:30:39.657+0000] {standard_task_runner.py:91} INFO - Job 15: Subtask print_subreddit_posts
+[2024-08-01T21:30:39.720+0000] {task_command.py:426} INFO - Running <TaskInstance: reddit_dag.print_subreddit_posts manual__2024-08-01T21:30:31.624979+00:00 [running]> on host a520ee17329b
+[2024-08-01T21:30:39.826+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_dag' AIRFLOW_CTX_TASK_ID='print_subreddit_posts' AIRFLOW_CTX_EXECUTION_DATE='2024-08-01T21:30:31.624979+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-01T21:30:31.624979+00:00'
+[2024-08-01T21:30:39.827+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-01T21:31:11.593+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-01T21:31:11.595+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/project_dag.py", line 40, in scrape
+    collection.insert_one(post_data)
+  File "/home/airflow/.local/lib/python3.12/site-packages/pymongo/collection.py", line 658, in insert_one
+    self._insert_one(
+  File "/home/airflow/.local/lib/python3.12/site-packages/pymongo/collection.py", line 598, in _insert_one
+    self.__database.client._retryable_write(
+  File "/home/airflow/.local/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1575, in _retryable_write
+    return self._retry_with_session(retryable, func, s, bulk, operation, operation_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1461, in _retry_with_session
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pymongo/_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1507, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pymongo/mongo_client.py", line 2353, in run
+    return self._read() if self._is_read else self._write()
+                                              ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pymongo/mongo_client.py", line 2456, in _write
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pymongo/mongo_client.py", line 2439, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1322, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pymongo/topology.py", line 368, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pymongo/topology.py", line 346, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pymongo/topology.py", line 253, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pymongo/topology.py", line 303, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 66abfe80741000457afdbb30, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[2024-08-01T21:31:11.616+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=reddit_dag, task_id=print_subreddit_posts, run_id=manual__2024-08-01T21:30:31.624979+00:00, execution_date=20240801T213031, start_date=20240801T213039, end_date=20240801T213111
+[2024-08-01T21:31:11.650+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 15 for task print_subreddit_posts (localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 66abfe80741000457afdbb30, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>; 741)
+[2024-08-01T21:31:11.674+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-08-01T21:31:11.692+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-01T21:31:11.694+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

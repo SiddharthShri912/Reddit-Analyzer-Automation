@@ -1,0 +1,20 @@
+[2024-08-01T22:48:37.267+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-01T22:48:37.297+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_dag.processing manual__2024-08-01T22:48:23.976338+00:00 [queued]>
+[2024-08-01T22:48:37.309+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_dag.processing manual__2024-08-01T22:48:23.976338+00:00 [queued]>
+[2024-08-01T22:48:37.310+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-01T22:48:37.338+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): processing> on 2024-08-01 22:48:23.976338+00:00
+[2024-08-01T22:48:37.342+0000] {standard_task_runner.py:64} INFO - Started process 2770 to run task
+[2024-08-01T22:48:37.344+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_dag', 'processing', 'manual__2024-08-01T22:48:23.976338+00:00', '--job-id', '92', '--raw', '--subdir', 'DAGS_FOLDER/project_dag.py', '--cfg-path', '/tmp/tmpdvbkc0wy']
+[2024-08-01T22:48:37.345+0000] {standard_task_runner.py:91} INFO - Job 92: Subtask processing
+[2024-08-01T22:48:37.401+0000] {task_command.py:426} INFO - Running <TaskInstance: reddit_dag.processing manual__2024-08-01T22:48:23.976338+00:00 [running]> on host a520ee17329b
+[2024-08-01T22:48:37.504+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_dag' AIRFLOW_CTX_TASK_ID='processing' AIRFLOW_CTX_EXECUTION_DATE='2024-08-01T22:48:23.976338+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-01T22:48:23.976338+00:00'
+[2024-08-01T22:48:37.505+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-01T22:48:37.531+0000] {logging_mixin.py:188} INFO - {'_id': ObjectId('66ac10c124f4f7d41e4d8bac'), 'title': 'The U.S. moves to recognize election victory of Venezuelan opposition over Maduro', 'text': '', 'upvotes': 107}
+[2024-08-01T22:48:37.533+0000] {logging_mixin.py:188} INFO - Post saved: The U.S. moves to recognize election victory of Venezuelan opposition over Maduro
+[2024-08-01T22:48:37.533+0000] {logging_mixin.py:188} INFO - done
+[2024-08-01T22:48:37.534+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-01T22:48:37.534+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-01T22:48:37.545+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=reddit_dag, task_id=processing, run_id=manual__2024-08-01T22:48:23.976338+00:00, execution_date=20240801T224823, start_date=20240801T224837, end_date=20240801T224837
+[2024-08-01T22:48:37.597+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-01T22:48:37.625+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-01T22:48:37.633+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,39 @@
+[2024-08-01T22:25:37.337+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-01T22:25:37.365+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_dag.processing manual__2024-08-01T22:25:25.813760+00:00 [queued]>
+[2024-08-01T22:25:37.377+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_dag.processing manual__2024-08-01T22:25:25.813760+00:00 [queued]>
+[2024-08-01T22:25:37.378+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-01T22:25:37.407+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): processing> on 2024-08-01 22:25:25.813760+00:00
+[2024-08-01T22:25:37.413+0000] {standard_task_runner.py:64} INFO - Started process 2007 to run task
+[2024-08-01T22:25:37.414+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_dag', 'processing', 'manual__2024-08-01T22:25:25.813760+00:00', '--job-id', '63', '--raw', '--subdir', 'DAGS_FOLDER/project_dag.py', '--cfg-path', '/tmp/tmpytwtzb5v']
+[2024-08-01T22:25:37.416+0000] {standard_task_runner.py:91} INFO - Job 63: Subtask processing
+[2024-08-01T22:25:37.479+0000] {task_command.py:426} INFO - Running <TaskInstance: reddit_dag.processing manual__2024-08-01T22:25:25.813760+00:00 [running]> on host a520ee17329b
+[2024-08-01T22:25:37.583+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_dag' AIRFLOW_CTX_TASK_ID='processing' AIRFLOW_CTX_EXECUTION_DATE='2024-08-01T22:25:25.813760+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-01T22:25:25.813760+00:00'
+[2024-08-01T22:25:37.583+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-01T22:25:37.610+0000] {logging_mixin.py:188} INFO - {'_id': ObjectId('66ac0a8f4188efc2351fa832'), 'title': "Head of Russia's military supplier company detained as corruption cases mount", 'text': '', 'upvotes': 75}
+[2024-08-01T22:25:37.610+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-01T22:25:37.611+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/project_dag.py", line 58, in processing
+    collection.insert_one(post_data)
+                      ^^^^^^^^^
+NameError: name 'post_data' is not defined
+[2024-08-01T22:25:37.626+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=reddit_dag, task_id=processing, run_id=manual__2024-08-01T22:25:25.813760+00:00, execution_date=20240801T222525, start_date=20240801T222537, end_date=20240801T222537
+[2024-08-01T22:25:37.651+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 63 for task processing (name 'post_data' is not defined; 2007)
+[2024-08-01T22:25:37.668+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-08-01T22:25:37.683+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-01T22:25:37.685+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

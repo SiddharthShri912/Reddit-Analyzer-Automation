@@ -1,0 +1,75 @@
+[2024-08-01T23:03:31.516+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-01T23:03:31.546+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_dag.processing2 manual__2024-08-01T23:03:14.069671+00:00 [queued]>
+[2024-08-01T23:03:31.557+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_dag.processing2 manual__2024-08-01T23:03:14.069671+00:00 [queued]>
+[2024-08-01T23:03:31.558+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-01T23:03:31.585+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): processing2> on 2024-08-01 23:03:14.069671+00:00
+[2024-08-01T23:03:31.590+0000] {standard_task_runner.py:64} INFO - Started process 3360 to run task
+[2024-08-01T23:03:31.592+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_dag', 'processing2', 'manual__2024-08-01T23:03:14.069671+00:00', '--job-id', '117', '--raw', '--subdir', 'DAGS_FOLDER/project_dag.py', '--cfg-path', '/tmp/tmpin7_4cs1']
+[2024-08-01T23:03:31.593+0000] {standard_task_runner.py:91} INFO - Job 117: Subtask processing2
+[2024-08-01T23:03:31.650+0000] {task_command.py:426} INFO - Running <TaskInstance: reddit_dag.processing2 manual__2024-08-01T23:03:14.069671+00:00 [running]> on host a520ee17329b
+[2024-08-01T23:03:31.753+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_dag' AIRFLOW_CTX_TASK_ID='processing2' AIRFLOW_CTX_EXECUTION_DATE='2024-08-01T23:03:14.069671+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-01T23:03:14.069671+00:00'
+[2024-08-01T23:03:31.754+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-01T23:03:31.780+0000] {logging_mixin.py:188} INFO - Paul Whelan released from Russia in prisoner swap that includes reporter Evan GershkovichUS and Israel discuss "new defensive military deployments" Release of Russian hackers believed to be first U.S. prisoner swap of international cybercriminalsThe U.S. moves to recognize election victory of Venezuelan opposition over MaduroWorld Bank warns 108 countries risk being stuck in ‘middle-income trap’Paul Whelan released from Russia in prisoner swap that includes reporter Evan GershkovichUS and Israel discuss "new defensive military deployments" Release of Russian hackers believed to be first U.S. prisoner swap of international cybercriminalsThe U.S. moves to recognize election victory of Venezuelan opposition over MaduroWorld Bank warns 108 countries risk being stuck in ‘middle-income trap’Paul Whelan released from Russia in prisoner swap that includes reporter Evan GershkovichUS and Israel discuss "new defensive military deployments" Release of Russian hackers believed to be first U.S. prisoner swap of international cybercriminalsThe U.S. moves to recognize election victory of Venezuelan opposition over MaduroWorld Bank warns 108 countries risk being stuck in ‘middle-income trap’Paul Whelan released from Russia in prisoner swap that includes reporter Evan GershkovichUS and Israel discuss "new defensive military deployments" Release of Russian hackers believed to be first U.S. prisoner swap of international cybercriminalsThe U.S. moves to recognize election victory of Venezuelan opposition over MaduroWorld Bank warns 108 countries risk being stuck in ‘middle-income trap’Paul Whelan released from Russia in prisoner swap that includes reporter Evan GershkovichUS and Israel discuss "new defensive military deployments" Release of Russian hackers believed to be first U.S. prisoner swap of international cybercriminalsThe U.S. moves to recognize election victory of Venezuelan opposition over MaduroWorld Bank warns 108 countries risk being stuck in ‘middle-income trap’Anger mounts over environmental cost of Google datacentre in UruguayPaul Whelan released from Russia in prisoner swap that includes reporter Evan GershkovichUS and Israel discuss "new defensive military deployments" Release of Russian hackers believed to be first U.S. prisoner swap of international cybercriminalsThe U.S. moves to recognize election victory of Venezuelan opposition over MaduroAnger mounts over environmental cost of Google datacentre in UruguayPaul Whelan released from Russia in prisoner swap that includes reporter Evan GershkovichUS and Israel discuss "new defensive military deployments" Release of Russian hackers believed to be first U.S. prisoner swap of international cybercriminalsThe U.S. moves to recognize election victory of Venezuelan opposition over MaduroAnger mounts over environmental cost of Google datacentre in UruguayPaul Whelan released from Russia in prisoner swap that includes reporter Evan GershkovichUS and Israel discuss "new defensive military deployments" Release of Russian hackers believed to be first U.S. prisoner swap of international cybercriminalsThe U.S. moves to recognize election victory of Venezuelan opposition over MaduroAnger mounts over environmental cost of Google datacentre in UruguayPaul Whelan released from Russia in prisoner swap that includes reporter Evan GershkovichUS and Israel discuss "new defensive military deployments" Release of Russian hackers believed to be first U.S. prisoner swap of international cybercriminalsThe U.S. moves to recognize election victory of Venezuelan opposition over MaduroAnger mounts over environmental cost of Google datacentre in UruguayPaul Whelan released from Russia in prisoner swap that includes reporter Evan GershkovichUS and Israel discuss "new defensive military deployments" Release of Russian hackers believed to be first U.S. prisoner swap of international cybercriminalsThe U.S. moves to recognize election victory of Venezuelan opposition over Maduro
+[2024-08-01T23:03:31.781+0000] {logging_mixin.py:188} INFO - paul: 1
+[2024-08-01T23:03:31.781+0000] {logging_mixin.py:188} INFO - whelan: 10
+[2024-08-01T23:03:31.782+0000] {logging_mixin.py:188} INFO - released: 10
+[2024-08-01T23:03:31.782+0000] {logging_mixin.py:188} INFO - from: 10
+[2024-08-01T23:03:31.782+0000] {logging_mixin.py:188} INFO - russia: 10
+[2024-08-01T23:03:31.782+0000] {logging_mixin.py:188} INFO - in: 20
+[2024-08-01T23:03:31.783+0000] {logging_mixin.py:188} INFO - prisoner: 20
+[2024-08-01T23:03:31.783+0000] {logging_mixin.py:188} INFO - swap: 20
+[2024-08-01T23:03:31.783+0000] {logging_mixin.py:188} INFO - that: 10
+[2024-08-01T23:03:31.784+0000] {logging_mixin.py:188} INFO - includes: 10
+[2024-08-01T23:03:31.784+0000] {logging_mixin.py:188} INFO - reporter: 10
+[2024-08-01T23:03:31.784+0000] {logging_mixin.py:188} INFO - evan: 10
+[2024-08-01T23:03:31.784+0000] {logging_mixin.py:188} INFO - gershkovichus: 10
+[2024-08-01T23:03:31.785+0000] {logging_mixin.py:188} INFO - and: 10
+[2024-08-01T23:03:31.785+0000] {logging_mixin.py:188} INFO - israel: 10
+[2024-08-01T23:03:31.785+0000] {logging_mixin.py:188} INFO - discuss: 10
+[2024-08-01T23:03:31.786+0000] {logging_mixin.py:188} INFO - "new: 10
+[2024-08-01T23:03:31.786+0000] {logging_mixin.py:188} INFO - defensive: 10
+[2024-08-01T23:03:31.786+0000] {logging_mixin.py:188} INFO - military: 10
+[2024-08-01T23:03:31.786+0000] {logging_mixin.py:188} INFO - deployments": 10
+[2024-08-01T23:03:31.787+0000] {logging_mixin.py:188} INFO - release: 10
+[2024-08-01T23:03:31.787+0000] {logging_mixin.py:188} INFO - of: 35
+[2024-08-01T23:03:31.787+0000] {logging_mixin.py:188} INFO - russian: 10
+[2024-08-01T23:03:31.787+0000] {logging_mixin.py:188} INFO - hackers: 10
+[2024-08-01T23:03:31.788+0000] {logging_mixin.py:188} INFO - believed: 10
+[2024-08-01T23:03:31.788+0000] {logging_mixin.py:188} INFO - to: 20
+[2024-08-01T23:03:31.788+0000] {logging_mixin.py:188} INFO - be: 10
+[2024-08-01T23:03:31.789+0000] {logging_mixin.py:188} INFO - first: 10
+[2024-08-01T23:03:31.789+0000] {logging_mixin.py:188} INFO - u.s.: 20
+[2024-08-01T23:03:31.789+0000] {logging_mixin.py:188} INFO - international: 10
+[2024-08-01T23:03:31.789+0000] {logging_mixin.py:188} INFO - cybercriminalsthe: 10
+[2024-08-01T23:03:31.790+0000] {logging_mixin.py:188} INFO - moves: 10
+[2024-08-01T23:03:31.790+0000] {logging_mixin.py:188} INFO - recognize: 10
+[2024-08-01T23:03:31.790+0000] {logging_mixin.py:188} INFO - election: 10
+[2024-08-01T23:03:31.790+0000] {logging_mixin.py:188} INFO - victory: 10
+[2024-08-01T23:03:31.791+0000] {logging_mixin.py:188} INFO - venezuelan: 10
+[2024-08-01T23:03:31.791+0000] {logging_mixin.py:188} INFO - opposition: 10
+[2024-08-01T23:03:31.791+0000] {logging_mixin.py:188} INFO - over: 15
+[2024-08-01T23:03:31.792+0000] {logging_mixin.py:188} INFO - maduroworld: 5
+[2024-08-01T23:03:31.792+0000] {logging_mixin.py:188} INFO - bank: 5
+[2024-08-01T23:03:31.792+0000] {logging_mixin.py:188} INFO - warns: 5
+[2024-08-01T23:03:31.793+0000] {logging_mixin.py:188} INFO - 108: 5
+[2024-08-01T23:03:31.793+0000] {logging_mixin.py:188} INFO - countries: 5
+[2024-08-01T23:03:31.793+0000] {logging_mixin.py:188} INFO - risk: 5
+[2024-08-01T23:03:31.794+0000] {logging_mixin.py:188} INFO - being: 5
+[2024-08-01T23:03:31.794+0000] {logging_mixin.py:188} INFO - stuck: 5
+[2024-08-01T23:03:31.794+0000] {logging_mixin.py:188} INFO - ‘middle-income: 5
+[2024-08-01T23:03:31.794+0000] {logging_mixin.py:188} INFO - trap’paul: 4
+[2024-08-01T23:03:31.795+0000] {logging_mixin.py:188} INFO - trap’anger: 1
+[2024-08-01T23:03:31.795+0000] {logging_mixin.py:188} INFO - mounts: 5
+[2024-08-01T23:03:31.795+0000] {logging_mixin.py:188} INFO - environmental: 5
+[2024-08-01T23:03:31.796+0000] {logging_mixin.py:188} INFO - cost: 5
+[2024-08-01T23:03:31.796+0000] {logging_mixin.py:188} INFO - google: 5
+[2024-08-01T23:03:31.796+0000] {logging_mixin.py:188} INFO - datacentre: 5
+[2024-08-01T23:03:31.796+0000] {logging_mixin.py:188} INFO - uruguaypaul: 5
+[2024-08-01T23:03:31.797+0000] {logging_mixin.py:188} INFO - maduroanger: 4
+[2024-08-01T23:03:31.797+0000] {logging_mixin.py:188} INFO - maduro: 1
+[2024-08-01T23:03:31.797+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-01T23:03:31.798+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-01T23:03:31.808+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=reddit_dag, task_id=processing2, run_id=manual__2024-08-01T23:03:14.069671+00:00, execution_date=20240801T230314, start_date=20240801T230331, end_date=20240801T230331
+[2024-08-01T23:03:31.845+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-01T23:03:31.861+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-01T23:03:31.862+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

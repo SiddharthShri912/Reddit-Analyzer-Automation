@@ -1,0 +1,22 @@
+[2024-08-01T22:03:44.150+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-01T22:03:44.179+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_dag.print_subreddit_posts manual__2024-08-01T22:03:36.262351+00:00 [queued]>
+[2024-08-01T22:03:44.190+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_dag.print_subreddit_posts manual__2024-08-01T22:03:36.262351+00:00 [queued]>
+[2024-08-01T22:03:44.191+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-01T22:03:44.220+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): print_subreddit_posts> on 2024-08-01 22:03:36.262351+00:00
+[2024-08-01T22:03:44.224+0000] {standard_task_runner.py:64} INFO - Started process 1342 to run task
+[2024-08-01T22:03:44.226+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_dag', 'print_subreddit_posts', 'manual__2024-08-01T22:03:36.262351+00:00', '--job-id', '35', '--raw', '--subdir', 'DAGS_FOLDER/project_dag.py', '--cfg-path', '/tmp/tmpb00rtl5p']
+[2024-08-01T22:03:44.227+0000] {standard_task_runner.py:91} INFO - Job 35: Subtask print_subreddit_posts
+[2024-08-01T22:03:44.291+0000] {task_command.py:426} INFO - Running <TaskInstance: reddit_dag.print_subreddit_posts manual__2024-08-01T22:03:36.262351+00:00 [running]> on host a520ee17329b
+[2024-08-01T22:03:44.398+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_dag' AIRFLOW_CTX_TASK_ID='print_subreddit_posts' AIRFLOW_CTX_EXECUTION_DATE='2024-08-01T22:03:36.262351+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-01T22:03:36.262351+00:00'
+[2024-08-01T22:03:44.399+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-01T22:03:46.212+0000] {logging_mixin.py:188} INFO - Post saved: Unscientific work by NHAI led to Shirur landslide: Geological Survey of India report
+[2024-08-01T22:03:46.214+0000] {logging_mixin.py:188} INFO - Post saved: Auron Mein Kahan Dum Tha, Ulajh sell less than 1000 tickets each ahead of release, ‘disastrous’ opening to send shock waves across industry: report
+[2024-08-01T22:03:46.215+0000] {logging_mixin.py:188} INFO - Post saved: Saw domestic violence on the streets. Need advice.
+[2024-08-01T22:03:46.216+0000] {logging_mixin.py:188} INFO - Post saved: 3-year-old raped, left unconscious in field in MP’s Dindori
+[2024-08-01T22:03:46.217+0000] {logging_mixin.py:188} INFO - Post saved: The Fisherman's True Wealth. Full Story Below. AI Generated.
+[2024-08-01T22:03:46.218+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-01T22:03:46.218+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-01T22:03:46.228+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=reddit_dag, task_id=print_subreddit_posts, run_id=manual__2024-08-01T22:03:36.262351+00:00, execution_date=20240801T220336, start_date=20240801T220344, end_date=20240801T220346
+[2024-08-01T22:03:46.286+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-01T22:03:46.314+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-01T22:03:46.321+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

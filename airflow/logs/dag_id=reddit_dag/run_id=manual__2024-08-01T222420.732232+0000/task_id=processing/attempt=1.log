@@ -1,0 +1,38 @@
+[2024-08-01T22:24:33.427+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-01T22:24:33.455+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_dag.processing manual__2024-08-01T22:24:20.732232+00:00 [queued]>
+[2024-08-01T22:24:33.465+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_dag.processing manual__2024-08-01T22:24:20.732232+00:00 [queued]>
+[2024-08-01T22:24:33.465+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-01T22:24:33.493+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): processing> on 2024-08-01 22:24:20.732232+00:00
+[2024-08-01T22:24:33.498+0000] {standard_task_runner.py:64} INFO - Started process 1943 to run task
+[2024-08-01T22:24:33.499+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_dag', 'processing', 'manual__2024-08-01T22:24:20.732232+00:00', '--job-id', '60', '--raw', '--subdir', 'DAGS_FOLDER/project_dag.py', '--cfg-path', '/tmp/tmpqd5wmm09']
+[2024-08-01T22:24:33.500+0000] {standard_task_runner.py:91} INFO - Job 60: Subtask processing
+[2024-08-01T22:24:33.561+0000] {task_command.py:426} INFO - Running <TaskInstance: reddit_dag.processing manual__2024-08-01T22:24:20.732232+00:00 [running]> on host a520ee17329b
+[2024-08-01T22:24:33.668+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_dag' AIRFLOW_CTX_TASK_ID='processing' AIRFLOW_CTX_EXECUTION_DATE='2024-08-01T22:24:20.732232+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-01T22:24:20.732232+00:00'
+[2024-08-01T22:24:33.668+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-01T22:24:33.696+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-01T22:24:33.696+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/project_dag.py", line 55, in processing
+    'upvotes': submission['score']
+               ~~~~~~~~~~^^^^^^^^^
+KeyError: 'score'
+[2024-08-01T22:24:33.709+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=reddit_dag, task_id=processing, run_id=manual__2024-08-01T22:24:20.732232+00:00, execution_date=20240801T222420, start_date=20240801T222433, end_date=20240801T222433
+[2024-08-01T22:24:33.735+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 60 for task processing ('score'; 1943)
+[2024-08-01T22:24:33.752+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-08-01T22:24:33.768+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-01T22:24:33.770+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

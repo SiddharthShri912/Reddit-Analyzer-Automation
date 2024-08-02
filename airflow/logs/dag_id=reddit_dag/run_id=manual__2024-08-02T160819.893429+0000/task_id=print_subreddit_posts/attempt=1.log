@@ -1,0 +1,22 @@
+[2024-08-02T16:08:26.997+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-02T16:08:27.025+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_dag.print_subreddit_posts manual__2024-08-02T16:08:19.893429+00:00 [queued]>
+[2024-08-02T16:08:27.035+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_dag.print_subreddit_posts manual__2024-08-02T16:08:19.893429+00:00 [queued]>
+[2024-08-02T16:08:27.036+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-02T16:08:27.064+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): print_subreddit_posts> on 2024-08-02 16:08:19.893429+00:00
+[2024-08-02T16:08:27.068+0000] {standard_task_runner.py:64} INFO - Started process 592 to run task
+[2024-08-02T16:08:27.070+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_dag', 'print_subreddit_posts', 'manual__2024-08-02T16:08:19.893429+00:00', '--job-id', '145', '--raw', '--subdir', 'DAGS_FOLDER/project_dag.py', '--cfg-path', '/tmp/tmp9u1en3x6']
+[2024-08-02T16:08:27.071+0000] {standard_task_runner.py:91} INFO - Job 145: Subtask print_subreddit_posts
+[2024-08-02T16:08:27.131+0000] {task_command.py:426} INFO - Running <TaskInstance: reddit_dag.print_subreddit_posts manual__2024-08-02T16:08:19.893429+00:00 [running]> on host 3e56899c9e52
+[2024-08-02T16:08:27.244+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_dag' AIRFLOW_CTX_TASK_ID='print_subreddit_posts' AIRFLOW_CTX_EXECUTION_DATE='2024-08-02T16:08:19.893429+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-02T16:08:19.893429+00:00'
+[2024-08-02T16:08:27.245+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-02T16:08:28.585+0000] {logging_mixin.py:188} INFO - Post saved: $10M cash withdrawal drove secret probe into whether Trump took money from Egypt
+[2024-08-02T16:08:28.586+0000] {logging_mixin.py:188} INFO - Post saved: Revealed: Tories failed to do impact check before approving banned pesticide
+[2024-08-02T16:08:28.588+0000] {logging_mixin.py:188} INFO - Post saved: Israel kills an Al Jazeera journalist and says, without evidence, he was a Hamas operative
+[2024-08-02T16:08:28.589+0000] {logging_mixin.py:188} INFO - Post saved: France investigates death threats against Olympics ceremony director
+[2024-08-02T16:08:28.590+0000] {logging_mixin.py:188} INFO - Post saved: France has formally advised its citizen against travelling to Iran and has asked French citizens still the country to leave as soon as possible due to a risk of military escalation in the region
+[2024-08-02T16:08:28.591+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-02T16:08:28.591+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-02T16:08:28.601+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=reddit_dag, task_id=print_subreddit_posts, run_id=manual__2024-08-02T16:08:19.893429+00:00, execution_date=20240802T160819, start_date=20240802T160827, end_date=20240802T160828
+[2024-08-02T16:08:28.648+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-02T16:08:28.678+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-02T16:08:28.685+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

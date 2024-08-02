@@ -1,0 +1,18 @@
+[2024-08-01T23:00:22.116+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-01T23:00:22.146+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_dag.print_welcome manual__2024-08-01T23:00:18.231987+00:00 [queued]>
+[2024-08-01T23:00:22.157+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_dag.print_welcome manual__2024-08-01T23:00:18.231987+00:00 [queued]>
+[2024-08-01T23:00:22.157+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-01T23:00:22.186+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): print_welcome> on 2024-08-01 23:00:18.231987+00:00
+[2024-08-01T23:00:22.191+0000] {standard_task_runner.py:64} INFO - Started process 3209 to run task
+[2024-08-01T23:00:22.193+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_dag', 'print_welcome', 'manual__2024-08-01T23:00:18.231987+00:00', '--job-id', '110', '--raw', '--subdir', 'DAGS_FOLDER/project_dag.py', '--cfg-path', '/tmp/tmp5clrok9g']
+[2024-08-01T23:00:22.194+0000] {standard_task_runner.py:91} INFO - Job 110: Subtask print_welcome
+[2024-08-01T23:00:22.257+0000] {task_command.py:426} INFO - Running <TaskInstance: reddit_dag.print_welcome manual__2024-08-01T23:00:18.231987+00:00 [running]> on host a520ee17329b
+[2024-08-01T23:00:22.378+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_dag' AIRFLOW_CTX_TASK_ID='print_welcome' AIRFLOW_CTX_EXECUTION_DATE='2024-08-01T23:00:18.231987+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-01T23:00:18.231987+00:00'
+[2024-08-01T23:00:22.379+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-01T23:00:22.390+0000] {logging_mixin.py:188} INFO - Welcome!
+[2024-08-01T23:00:22.391+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-01T23:00:22.391+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-01T23:00:22.401+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=reddit_dag, task_id=print_welcome, run_id=manual__2024-08-01T23:00:18.231987+00:00, execution_date=20240801T230018, start_date=20240801T230022, end_date=20240801T230022
+[2024-08-01T23:00:22.446+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-01T23:00:22.477+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-01T23:00:22.484+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

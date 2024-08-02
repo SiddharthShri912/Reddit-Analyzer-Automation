@@ -1,0 +1,117 @@
+[2024-08-02T21:31:16.984+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-02T21:31:17.013+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_dag.print_subreddit_posts manual__2024-08-02T21:31:09.275982+00:00 [queued]>
+[2024-08-02T21:31:17.024+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_dag.print_subreddit_posts manual__2024-08-02T21:31:09.275982+00:00 [queued]>
+[2024-08-02T21:31:17.025+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-02T21:31:17.054+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): print_subreddit_posts> on 2024-08-02 21:31:09.275982+00:00
+[2024-08-02T21:31:17.057+0000] {standard_task_runner.py:64} INFO - Started process 3547 to run task
+[2024-08-02T21:31:17.059+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_dag', 'print_subreddit_posts', 'manual__2024-08-02T21:31:09.275982+00:00', '--job-id', '335', '--raw', '--subdir', 'DAGS_FOLDER/project_dag.py', '--cfg-path', '/tmp/tmpw0imwfm0']
+[2024-08-02T21:31:17.060+0000] {standard_task_runner.py:91} INFO - Job 335: Subtask print_subreddit_posts
+[2024-08-02T21:31:17.116+0000] {task_command.py:426} INFO - Running <TaskInstance: reddit_dag.print_subreddit_posts manual__2024-08-02T21:31:09.275982+00:00 [running]> on host 7df8ffa41b22
+[2024-08-02T21:31:17.227+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_dag' AIRFLOW_CTX_TASK_ID='print_subreddit_posts' AIRFLOW_CTX_EXECUTION_DATE='2024-08-02T21:31:09.275982+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-02T21:31:09.275982+00:00'
+[2024-08-02T21:31:17.228+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-02T21:31:20.386+0000] {logging_mixin.py:188} INFO - Post saved: Cartoon by Alok 
+[2024-08-02T21:31:20.388+0000] {logging_mixin.py:188} INFO - Post saved: Villagers protest over nuclear power plant project in Rajasthan’s Banswara district
+[2024-08-02T21:31:20.389+0000] {logging_mixin.py:188} INFO - Post saved: From Class Clown to Lonely Laughter
+[2024-08-02T21:31:20.390+0000] {logging_mixin.py:188} INFO - Post saved: Help me decide If I should buy a bike or not.
+[2024-08-02T21:31:20.391+0000] {logging_mixin.py:188} INFO - Post saved: Meghalaya tightens migrant worker rules Increased penalties thorough antecedent checks - The Week
+[2024-08-02T21:31:20.393+0000] {logging_mixin.py:188} INFO - Post saved: Asian Games Medal Tally of India (Peaks are 1951 and 1982 when India hosted Asian Games)
+[2024-08-02T21:31:20.394+0000] {logging_mixin.py:188} INFO - Post saved: Shall I change Career? Long post but really appreciate any help :)
+[2024-08-02T21:31:20.395+0000] {logging_mixin.py:188} INFO - Post saved: Indian cities are utterly unprepared for what is about to hit them
+[2024-08-02T21:31:20.396+0000] {logging_mixin.py:188} INFO - Post saved: Wayanad landslide: How an elephant stood next to a woman and grandchild escaping tragedy
+[2024-08-02T21:31:20.397+0000] {logging_mixin.py:188} INFO - Post saved: Experience with Scam callers 
+[2024-08-02T21:31:20.398+0000] {logging_mixin.py:188} INFO - Post saved: Help my friend with surgery
+[2024-08-02T21:31:20.400+0000] {logging_mixin.py:188} INFO - Post saved: As India ages, a secret shame emerges: Elders abandoned by their children
+[2024-08-02T21:31:20.401+0000] {logging_mixin.py:188} INFO - Post saved: Today I learnt why women don't say "yes" as eagerly as you would expect them to say 
+[2024-08-02T21:31:20.402+0000] {logging_mixin.py:188} INFO - Post saved: Can anybody provide context on this chalice?
+[2024-08-02T21:31:20.404+0000] {logging_mixin.py:188} INFO - Post saved: What did you do to move out of the startup scene into well established firms? 
+[2024-08-02T21:31:20.405+0000] {logging_mixin.py:188} INFO - Post saved: After 10 years, Modi has accepted the Indian political consensus: ignore the middle class
+[2024-08-02T21:31:20.406+0000] {logging_mixin.py:188} INFO - Post saved: How Modi Govt’s 2024 budget shows socialism is our true national ideology & what’s the BASE effect
+[2024-08-02T21:31:20.407+0000] {logging_mixin.py:188} INFO - Post saved: UPSC coaching centre deaths | Mercifully, you didn’t challan the water: HC slams police probe, transfers case to CBI
+[2024-08-02T21:31:20.408+0000] {logging_mixin.py:188} INFO - Post saved: India
+[2024-08-02T21:31:20.409+0000] {logging_mixin.py:188} INFO - Post saved: Confused, thinking that my father is eating me up monetarily. Need help
+[2024-08-02T21:31:20.410+0000] {logging_mixin.py:188} INFO - Post saved: 8 Indians killed fighting for Russia, Centre tells Rajya Sabha
+[2024-08-02T21:31:20.412+0000] {logging_mixin.py:188} INFO - Post saved: Lakshya Sen through to semi finals!
+[2024-08-02T21:31:20.413+0000] {logging_mixin.py:188} INFO - Post saved: Thoughts on what to be done to mitigate nation suffering from floods, heatwaves, etc 
+[2024-08-02T21:31:20.414+0000] {logging_mixin.py:188} INFO - Post saved: Emigrate while you can - it doesn’t make you less patriotic
+[2024-08-02T21:31:20.415+0000] {logging_mixin.py:188} INFO - Post saved: The Festival of Abundance! | Onam | India's Mega Festivals | National Geographic | DONATE!
+[2024-08-02T21:31:20.416+0000] {logging_mixin.py:188} INFO - Post saved: Delhi-Dili connect | India to soon open embassy in Timor-Leste, says MEA Secretary
+[2024-08-02T21:31:20.417+0000] {logging_mixin.py:188} INFO - Post saved: From Acing Exams to Battling Scoliosis: My Story as a 17-Year-Old
+[2024-08-02T21:31:20.418+0000] {logging_mixin.py:188} INFO - Post saved: 8 Indians killed while fighting in Russian army
+[2024-08-02T21:31:20.420+0000] {logging_mixin.py:188} INFO - Post saved: "Faced Controversy Regarding My Gender": Indian Olympian Dutee Chand Reacts To Olympics Boxing Controversy
+[2024-08-02T21:31:20.421+0000] {logging_mixin.py:188} INFO - Post saved: Modi 240 wants to shut down @MrBeast... and @dhruvrathee | Broadcasting Bill EXPLAINED!
+[2024-08-02T21:31:20.422+0000] {logging_mixin.py:188} INFO - Post saved: The tiny roof leak has turned into a massive flood of the new Parliament building
+[2024-08-02T21:31:20.423+0000] {logging_mixin.py:188} INFO - Post saved: Over 2.1 lakh Indians renounced Indian citizenship in 2023: Govt
+[2024-08-02T21:31:20.424+0000] {logging_mixin.py:188} INFO - Post saved: Paper leak outside, water leak inside: Opposition takes dig at Modi govt over 'leak' in Parliament building
+[2024-08-02T21:31:20.425+0000] {logging_mixin.py:188} INFO - Post saved: Battling low confidence and academic challenges? How can you turn things around?"
+[2024-08-02T21:31:20.426+0000] {logging_mixin.py:188} INFO - Post saved: Am I the Only One Getting Overcharged by Local Technicians?
+[2024-08-02T21:31:20.427+0000] {logging_mixin.py:188} INFO - Post saved: How NoBroker deceived and scammed me into buying their services
+[2024-08-02T21:31:20.429+0000] {logging_mixin.py:188} INFO - Post saved: Mercifully you didn't challan the water. The way you caught hold of the driver...." : Delhi HC to Delhi police over the coaching centre tragedy
+[2024-08-02T21:31:20.430+0000] {logging_mixin.py:188} INFO - Post saved: Wayanad Landslide Live Updates: Rescue ops in Chooralmala enter Day 4; death toll goes past 300
+[2024-08-02T21:31:20.431+0000] {logging_mixin.py:188} INFO - Post saved: Imagine a boot stamping on a human face — forever | Broadcasting Services Bill 
+[2024-08-02T21:31:20.432+0000] {logging_mixin.py:188} INFO - Post saved: The Dalit kitchen - documenting the culinary history of a marginalised community 
+[2024-08-02T21:31:20.433+0000] {logging_mixin.py:188} INFO - Post saved: History Made! India Defeats Australia In Olympic Hockey For First Time In 52 Years.
+[2024-08-02T21:31:20.434+0000] {logging_mixin.py:188} INFO - Post saved: Exclusion of transgenders from donating blood: Supreme Court issues notice to Centre on plea challenging bar
+[2024-08-02T21:31:20.435+0000] {logging_mixin.py:188} INFO - Post saved: Urgent Help Required to help my mom!
+[2024-08-02T21:31:20.437+0000] {logging_mixin.py:188} INFO - Post saved: Such a small thing led me to realise something significant ( No hate against the country or anyone tho ) 
+[2024-08-02T21:31:20.438+0000] {logging_mixin.py:188} INFO - Post saved: From Pappu To Hero: Chetan Bhagat Describes How BJP Is Responsible For Rise Of Rahul Gandhi| SoSouth 
+[2024-08-02T21:31:20.439+0000] {logging_mixin.py:188} INFO - Post saved: Why Indians never top the charts in Olympics?
+[2024-08-02T21:31:20.440+0000] {logging_mixin.py:188} INFO - Post saved: India's Top Four Breakfast Choices Are South Indian Dishes, Says Swiggy Survey
+[2024-08-02T21:31:20.441+0000] {logging_mixin.py:188} INFO - Post saved: Remains of a tanker lorry crushed by landslide in Wayanad Kerala. 
+[2024-08-02T21:31:20.442+0000] {logging_mixin.py:188} INFO - Post saved: Is Amazon a scammer's heaven?
+[2024-08-02T21:31:20.444+0000] {logging_mixin.py:188} INFO - Post saved: Railway Board Denies Light Duty Request For Pregnant Loco Pilots
+[2024-08-02T21:31:20.445+0000] {logging_mixin.py:188} INFO - Post saved: Jealousy in India
+[2024-08-02T21:31:20.446+0000] {logging_mixin.py:188} INFO - Post saved: A hoarding collapses in Kalyan, near Mumbai, injuring two people
+[2024-08-02T21:31:20.447+0000] {logging_mixin.py:188} INFO - Post saved: Air India Suspends Tel Aviv Flights Amid Escalating Middle East Tensions
+[2024-08-02T21:31:20.448+0000] {logging_mixin.py:188} INFO - Post saved: Maharashtra Deputy CM Devendra Fadnavis Set To Become BJP President: Sources
+[2024-08-02T21:31:20.449+0000] {logging_mixin.py:188} INFO - Post saved: Link between Archimedes and UPSC training students incident.
+[2024-08-02T21:31:20.450+0000] {logging_mixin.py:188} INFO - Post saved: AITA to speak about India’s problems?
+[2024-08-02T21:31:20.451+0000] {logging_mixin.py:188} INFO - Post saved: The Blues | Art by Sandeep Adhwaryu
+[2024-08-02T21:31:20.452+0000] {logging_mixin.py:188} INFO - Post saved: ED raids being planned against me, waiting with open arms: Rahul Gandhi
+[2024-08-02T21:31:20.454+0000] {logging_mixin.py:188} INFO - Post saved: Modi Can't Build India's Military This Way
+[2024-08-02T21:31:20.455+0000] {logging_mixin.py:188} INFO - Post saved: [OLD]-India has the highest population of illiterate adults: Unesco
+[2024-08-02T21:31:20.456+0000] {logging_mixin.py:188} INFO - Post saved: Didn’t cancel NEET-UG 24 examination as there was no systematic breach: SC
+[2024-08-02T21:31:20.457+0000] {logging_mixin.py:188} INFO - Post saved: Five Madhya Pradesh judges named in exam fraud report continue to serve in district courts
+[2024-08-02T21:31:20.458+0000] {logging_mixin.py:188} INFO - Post saved: Unruly splash: Outrage as revellers harass, molest commuters in flooded Lucknow underpass; top cops shunted | Lucknow News - Times of India
+[2024-08-02T21:31:20.459+0000] {logging_mixin.py:188} INFO - Post saved: No promotion to Swapnil Kusale for 9 years despite pleas, Railways now pushes file in jiffy
+[2024-08-02T21:31:20.460+0000] {logging_mixin.py:188} INFO - Post saved: India May Record Above-Normal Rainfall In August, September: Weather Office
+[2024-08-02T21:31:20.461+0000] {logging_mixin.py:188} INFO - Post saved: India Lifted 800 Million People Out Of Poverty "Simply By Smartphone": UNGA
+[2024-08-02T21:31:20.462+0000] {logging_mixin.py:188} INFO - Post saved: We may grant bail in NDPS cases where ganja and charas is involved, but not for heroin: Supreme Court
+[2024-08-02T21:31:20.463+0000] {logging_mixin.py:188} INFO - Post saved: Have they lost it: Delhi HC on police arresting SUV driver for coaching centre deaths
+[2024-08-02T21:31:20.465+0000] {logging_mixin.py:188} INFO - Post saved: Urgent Call for Action: AMIE Degree Validation Needs Immediate Resolution by Delhi High Court!
+[2024-08-02T21:31:20.466+0000] {logging_mixin.py:188} INFO - Post saved: India at Olympics 2024: Day 7
+[2024-08-02T21:31:20.467+0000] {logging_mixin.py:188} INFO - Post saved: Should I stick in my bigger job or go to a different small yet comfortable to work small company company
+[2024-08-02T21:31:20.468+0000] {logging_mixin.py:188} INFO - Post saved: What's the specific animal on this bracelet
+[2024-08-02T21:31:20.469+0000] {logging_mixin.py:188} INFO - Post saved: Indian Rupee Becomes Second Worst Asian Currency This Quarter
+[2024-08-02T21:31:20.470+0000] {logging_mixin.py:188} INFO - Post saved: Joe Biden Expresses "Deepest Condolences" Over Kerala Landslides
+[2024-08-02T21:31:20.471+0000] {logging_mixin.py:188} INFO - Post saved: Kerala doctor co-founded startup set to revolutionise cancer therapy, secures USD 7.14 million funding
+[2024-08-02T21:31:20.472+0000] {logging_mixin.py:188} INFO - Post saved: basketball coach was HELL in India
+[2024-08-02T21:31:20.474+0000] {logging_mixin.py:188} INFO - Post saved: "Built With Billions...": Opposition Jabs BJP Over Parliament Roof Leak Video
+[2024-08-02T21:31:20.475+0000] {logging_mixin.py:188} INFO - Post saved: Unscientific work by NHAI led to Shirur landslide: Geological Survey of India report
+[2024-08-02T21:31:20.476+0000] {logging_mixin.py:188} INFO - Post saved: Auron Mein Kahan Dum Tha, Ulajh sell less than 1000 tickets each ahead of release, ‘disastrous’ opening to send shock waves across industry: report
+[2024-08-02T21:31:20.477+0000] {logging_mixin.py:188} INFO - Post saved: Saw domestic violence on the streets. Need advice.
+[2024-08-02T21:31:20.478+0000] {logging_mixin.py:188} INFO - Post saved: 3-year-old raped, left unconscious in field in MP’s Dindori
+[2024-08-02T21:31:20.479+0000] {logging_mixin.py:188} INFO - Post saved: Scientific community are being stopped from field visits in disaster affected areas and also restrained from sharing any study results. 
+[2024-08-02T21:31:20.480+0000] {logging_mixin.py:188} INFO - Post saved: First Time in India!
+[2024-08-02T21:31:20.481+0000] {logging_mixin.py:188} INFO - Post saved: Indian vultures: Decline of scavenger birds caused 500,000 human deaths.
+[2024-08-02T21:31:20.483+0000] {logging_mixin.py:188} INFO - Post saved: We need more people being open and sharing valuable insight from their profession and educated other
+[2024-08-02T21:31:20.484+0000] {logging_mixin.py:188} INFO - Post saved: CDAC - Confusion
+[2024-08-02T21:31:20.485+0000] {logging_mixin.py:188} INFO - Post saved: Don't Share Studies or Opinions with Media on Wayanad Mishap: Kerala Govt Gag Order on Scientists
+[2024-08-02T21:31:20.486+0000] {logging_mixin.py:188} INFO - Post saved: [OLD]-India has more uneducated people than anywhere in the world – partly because of a preference for sons
+[2024-08-02T21:31:20.487+0000] {logging_mixin.py:188} INFO - Post saved: How Thousands of Middlemen Are Gaming the H-1B Program
+[2024-08-02T21:31:20.488+0000] {logging_mixin.py:188} INFO - Post saved: GST | Art by Alok
+[2024-08-02T21:31:20.490+0000] {logging_mixin.py:188} INFO - Post saved: IMD issues orange alert for heavy rain in Delhi and Kerala, warns of severe downpours across India
+[2024-08-02T21:31:20.491+0000] {logging_mixin.py:188} INFO - Post saved: I'm a whitewashed Punjabi - pls tell me the etiquette for Punjabi weddings.
+[2024-08-02T21:31:20.492+0000] {logging_mixin.py:188} INFO - Post saved: I (19M) don't know what is wrong with me and what to do
+[2024-08-02T21:31:20.493+0000] {logging_mixin.py:188} INFO - Post saved: Boutique fined Rs 15,000 for failing to deliver blouse to woman she ordered last year.
+[2024-08-02T21:31:20.494+0000] {logging_mixin.py:188} INFO - Post saved: Can anyone tell me what this is ? I found this in my garden.
+[2024-08-02T21:31:20.495+0000] {logging_mixin.py:188} INFO - Post saved: Privilege notice against Amit Shah in Rajya Sabha for blaming Kerala government for Wayanad tragedy
+[2024-08-02T21:31:20.496+0000] {logging_mixin.py:188} INFO - Post saved: Indian startups gut valuations ahead of IPO push
+[2024-08-02T21:31:20.498+0000] {logging_mixin.py:188} INFO - Post saved: Seeking guidance to get a job
+[2024-08-02T21:31:20.499+0000] {logging_mixin.py:188} INFO - Post saved: American woman found emaciated and 'left to die' chained to tree in India
+[2024-08-02T21:31:20.500+0000] {logging_mixin.py:188} INFO - Post saved: Day after resigning from Rajya Sabha, ex-BJD leader Mamata Mahanta joins BJP
+[2024-08-02T21:31:20.501+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-02T21:31:20.501+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-02T21:31:20.511+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=reddit_dag, task_id=print_subreddit_posts, run_id=manual__2024-08-02T21:31:09.275982+00:00, execution_date=20240802T213109, start_date=20240802T213117, end_date=20240802T213120
+[2024-08-02T21:31:20.563+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-02T21:31:20.596+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-02T21:31:20.604+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,22 @@
+[2024-08-02T21:21:20.239+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-02T21:21:20.267+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_dag.print_subreddit_posts manual__2024-08-02T21:21:12.316086+00:00 [queued]>
+[2024-08-02T21:21:20.278+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_dag.print_subreddit_posts manual__2024-08-02T21:21:12.316086+00:00 [queued]>
+[2024-08-02T21:21:20.279+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-02T21:21:20.308+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): print_subreddit_posts> on 2024-08-02 21:21:12.316086+00:00
+[2024-08-02T21:21:20.312+0000] {standard_task_runner.py:64} INFO - Started process 2616 to run task
+[2024-08-02T21:21:20.314+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_dag', 'print_subreddit_posts', 'manual__2024-08-02T21:21:12.316086+00:00', '--job-id', '290', '--raw', '--subdir', 'DAGS_FOLDER/project_dag.py', '--cfg-path', '/tmp/tmp6zr4pfx4']
+[2024-08-02T21:21:20.315+0000] {standard_task_runner.py:91} INFO - Job 290: Subtask print_subreddit_posts
+[2024-08-02T21:21:20.376+0000] {task_command.py:426} INFO - Running <TaskInstance: reddit_dag.print_subreddit_posts manual__2024-08-02T21:21:12.316086+00:00 [running]> on host 7df8ffa41b22
+[2024-08-02T21:21:20.480+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_dag' AIRFLOW_CTX_TASK_ID='print_subreddit_posts' AIRFLOW_CTX_EXECUTION_DATE='2024-08-02T21:21:12.316086+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-02T21:21:12.316086+00:00'
+[2024-08-02T21:21:20.481+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-02T21:21:21.967+0000] {logging_mixin.py:188} INFO - Post saved: U.S. forces move toward Israel as Iran threatens to attack
+[2024-08-02T21:21:21.969+0000] {logging_mixin.py:188} INFO - Post saved: Dozens of children killed in Bangladesh protests - Unicef
+[2024-08-02T21:21:21.970+0000] {logging_mixin.py:188} INFO - Post saved: Japan's Olympics delegation has said it will consider contacting the police or taking legal action against defamatory content posted online against athletes
+[2024-08-02T21:21:21.971+0000] {logging_mixin.py:188} INFO - Post saved: Keir Starmer warns social media firms after Southport misinformation fuels riots
+[2024-08-02T21:21:21.972+0000] {logging_mixin.py:188} INFO - Post saved: Sudan's famine-stricken Zamzam camp hit by devastating floods
+[2024-08-02T21:21:21.973+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-02T21:21:21.973+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-02T21:21:21.983+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=reddit_dag, task_id=print_subreddit_posts, run_id=manual__2024-08-02T21:21:12.316086+00:00, execution_date=20240802T212112, start_date=20240802T212120, end_date=20240802T212121
+[2024-08-02T21:21:22.052+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-02T21:21:22.086+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-02T21:21:22.094+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

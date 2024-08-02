@@ -1,0 +1,38 @@
+[2024-08-02T21:19:32.423+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-02T21:19:32.451+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_dag.saving_top_post manual__2024-08-02T21:19:12.482065+00:00 [queued]>
+[2024-08-02T21:19:32.463+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_dag.saving_top_post manual__2024-08-02T21:19:12.482065+00:00 [queued]>
+[2024-08-02T21:19:32.464+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-02T21:19:32.492+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): saving_top_post> on 2024-08-02 21:19:12.482065+00:00
+[2024-08-02T21:19:32.495+0000] {standard_task_runner.py:64} INFO - Started process 2470 to run task
+[2024-08-02T21:19:32.497+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_dag', 'saving_top_post', 'manual__2024-08-02T21:19:12.482065+00:00', '--job-id', '283', '--raw', '--subdir', 'DAGS_FOLDER/project_dag.py', '--cfg-path', '/tmp/tmp2us2aswu']
+[2024-08-02T21:19:32.498+0000] {standard_task_runner.py:91} INFO - Job 283: Subtask saving_top_post
+[2024-08-02T21:19:32.554+0000] {task_command.py:426} INFO - Running <TaskInstance: reddit_dag.saving_top_post manual__2024-08-02T21:19:12.482065+00:00 [running]> on host 7df8ffa41b22
+[2024-08-02T21:19:32.651+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_dag' AIRFLOW_CTX_TASK_ID='saving_top_post' AIRFLOW_CTX_EXECUTION_DATE='2024-08-02T21:19:12.482065+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-02T21:19:12.482065+00:00'
+[2024-08-02T21:19:32.652+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-02T21:19:32.680+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-02T21:19:32.681+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/project_dag.py", line 142, in saveTopVoted
+    f = open('airflow/output.txt', 'a+')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'airflow/output.txt'
+[2024-08-02T21:19:32.691+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=reddit_dag, task_id=saving_top_post, run_id=manual__2024-08-02T21:19:12.482065+00:00, execution_date=20240802T211912, start_date=20240802T211932, end_date=20240802T211932
+[2024-08-02T21:19:32.717+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 283 for task saving_top_post ([Errno 2] No such file or directory: 'airflow/output.txt'; 2470)
+[2024-08-02T21:19:32.751+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-08-02T21:19:32.777+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-02T21:19:32.793+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

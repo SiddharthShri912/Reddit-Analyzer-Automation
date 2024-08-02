@@ -1,0 +1,65 @@
+[2024-08-02T21:28:35.180+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-02T21:28:35.211+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_dag.processing2 manual__2024-08-02T21:28:18.063909+00:00 [queued]>
+[2024-08-02T21:28:35.223+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_dag.processing2 manual__2024-08-02T21:28:18.063909+00:00 [queued]>
+[2024-08-02T21:28:35.224+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-02T21:28:35.256+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): processing2> on 2024-08-02 21:28:18.063909+00:00
+[2024-08-02T21:28:35.261+0000] {standard_task_runner.py:64} INFO - Started process 3304 to run task
+[2024-08-02T21:28:35.262+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_dag', 'processing2', 'manual__2024-08-02T21:28:18.063909+00:00', '--job-id', '323', '--raw', '--subdir', 'DAGS_FOLDER/project_dag.py', '--cfg-path', '/tmp/tmp2vzlfqzo']
+[2024-08-02T21:28:35.263+0000] {standard_task_runner.py:91} INFO - Job 323: Subtask processing2
+[2024-08-02T21:28:35.325+0000] {task_command.py:426} INFO - Running <TaskInstance: reddit_dag.processing2 manual__2024-08-02T21:28:18.063909+00:00 [running]> on host 7df8ffa41b22
+[2024-08-02T21:28:35.431+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_dag' AIRFLOW_CTX_TASK_ID='processing2' AIRFLOW_CTX_EXECUTION_DATE='2024-08-02T21:28:18.063909+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-02T21:28:18.063909+00:00'
+[2024-08-02T21:28:35.431+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-02T21:28:35.463+0000] {logging_mixin.py:188} INFO - Venezuelan opposition leader thanks U.S. for recognizing him as presidential election's winnerCrimean Bridge could be destroyed in coming months, Budanov saysDozens of children killed in Bangladesh protests - UnicefJapan's Olympics delegation has said it will consider contacting the police or taking legal action against defamatory content posted online against athletesKeir Starmer warns social media firms after Southport misinformation fuels riots
+[2024-08-02T21:28:35.465+0000] {logging_mixin.py:188} INFO - against: 2
+[2024-08-02T21:28:35.465+0000] {logging_mixin.py:188} INFO - venezuelan: 1
+[2024-08-02T21:28:35.465+0000] {logging_mixin.py:188} INFO - opposition: 1
+[2024-08-02T21:28:35.466+0000] {logging_mixin.py:188} INFO - leader: 1
+[2024-08-02T21:28:35.466+0000] {logging_mixin.py:188} INFO - thanks: 1
+[2024-08-02T21:28:35.466+0000] {logging_mixin.py:188} INFO - u.s.: 1
+[2024-08-02T21:28:35.467+0000] {logging_mixin.py:188} INFO - recognizing: 1
+[2024-08-02T21:28:35.467+0000] {logging_mixin.py:188} INFO - him: 1
+[2024-08-02T21:28:35.467+0000] {logging_mixin.py:188} INFO - presidential: 1
+[2024-08-02T21:28:35.468+0000] {logging_mixin.py:188} INFO - election's: 1
+[2024-08-02T21:28:35.468+0000] {logging_mixin.py:188} INFO - winnercrimean: 1
+[2024-08-02T21:28:35.468+0000] {logging_mixin.py:188} INFO - bridge: 1
+[2024-08-02T21:28:35.469+0000] {logging_mixin.py:188} INFO - could: 1
+[2024-08-02T21:28:35.469+0000] {logging_mixin.py:188} INFO - be: 1
+[2024-08-02T21:28:35.469+0000] {logging_mixin.py:188} INFO - destroyed: 1
+[2024-08-02T21:28:35.470+0000] {logging_mixin.py:188} INFO - coming: 1
+[2024-08-02T21:28:35.470+0000] {logging_mixin.py:188} INFO - months,: 1
+[2024-08-02T21:28:35.470+0000] {logging_mixin.py:188} INFO - budanov: 1
+[2024-08-02T21:28:35.470+0000] {logging_mixin.py:188} INFO - saysdozens: 1
+[2024-08-02T21:28:35.471+0000] {logging_mixin.py:188} INFO - children: 1
+[2024-08-02T21:28:35.471+0000] {logging_mixin.py:188} INFO - killed: 1
+[2024-08-02T21:28:35.471+0000] {logging_mixin.py:188} INFO - bangladesh: 1
+[2024-08-02T21:28:35.472+0000] {logging_mixin.py:188} INFO - protests: 1
+[2024-08-02T21:28:35.472+0000] {logging_mixin.py:188} INFO - -: 1
+[2024-08-02T21:28:35.472+0000] {logging_mixin.py:188} INFO - unicefjapan's: 1
+[2024-08-02T21:28:35.472+0000] {logging_mixin.py:188} INFO - olympics: 1
+[2024-08-02T21:28:35.473+0000] {logging_mixin.py:188} INFO - delegation: 1
+[2024-08-02T21:28:35.473+0000] {logging_mixin.py:188} INFO - will: 1
+[2024-08-02T21:28:35.473+0000] {logging_mixin.py:188} INFO - consider: 1
+[2024-08-02T21:28:35.473+0000] {logging_mixin.py:188} INFO - contacting: 1
+[2024-08-02T21:28:35.474+0000] {logging_mixin.py:188} INFO - police: 1
+[2024-08-02T21:28:35.474+0000] {logging_mixin.py:188} INFO - taking: 1
+[2024-08-02T21:28:35.474+0000] {logging_mixin.py:188} INFO - legal: 1
+[2024-08-02T21:28:35.475+0000] {logging_mixin.py:188} INFO - action: 1
+[2024-08-02T21:28:35.475+0000] {logging_mixin.py:188} INFO - defamatory: 1
+[2024-08-02T21:28:35.475+0000] {logging_mixin.py:188} INFO - content: 1
+[2024-08-02T21:28:35.476+0000] {logging_mixin.py:188} INFO - posted: 1
+[2024-08-02T21:28:35.476+0000] {logging_mixin.py:188} INFO - online: 1
+[2024-08-02T21:28:35.476+0000] {logging_mixin.py:188} INFO - athleteskeir: 1
+[2024-08-02T21:28:35.476+0000] {logging_mixin.py:188} INFO - starmer: 1
+[2024-08-02T21:28:35.477+0000] {logging_mixin.py:188} INFO - warns: 1
+[2024-08-02T21:28:35.477+0000] {logging_mixin.py:188} INFO - social: 1
+[2024-08-02T21:28:35.477+0000] {logging_mixin.py:188} INFO - firms: 1
+[2024-08-02T21:28:35.478+0000] {logging_mixin.py:188} INFO - southport: 1
+[2024-08-02T21:28:35.478+0000] {logging_mixin.py:188} INFO - misinformation: 1
+[2024-08-02T21:28:35.478+0000] {logging_mixin.py:188} INFO - fuels: 1
+[2024-08-02T21:28:35.478+0000] {logging_mixin.py:188} INFO - riots: 1
+[2024-08-02T21:28:35.479+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-02T21:28:35.480+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-02T21:28:35.491+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=reddit_dag, task_id=processing2, run_id=manual__2024-08-02T21:28:18.063909+00:00, execution_date=20240802T212818, start_date=20240802T212835, end_date=20240802T212835
+[2024-08-02T21:28:35.556+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-02T21:28:35.588+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-02T21:28:35.597+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
